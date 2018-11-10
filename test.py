@@ -84,7 +84,7 @@ def test_runner(params):
         print(colored('+  {:.3f} fps'.format(fps), 'blue'))
     except:
         print(colored('-  Test failed. ', 'red'))
-    print()
+    print(' ')
 
 
 def main():
