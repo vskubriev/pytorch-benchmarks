@@ -67,6 +67,11 @@ def test_case(model_name='resnet18', model_params=None,
 
 
 def test_runner(params):
+    """
+    Run the next test
+    :param params: test descriptor
+    :return: None
+    """
     from termcolor import colored
 
     print(colored('# {0} is started'.format(params.test_name), 'green'))
