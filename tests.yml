@@ -1,0 +1,230 @@
+tests:
+  # Float 16
+  -
+      test_name: 'resnet18_16bs_16f_cuda_eval'
+      model_name: 'resnet18'
+      model_params: False
+      num_iter: 10
+      use_cuda: True
+      mode: 'eval'
+      type: 'float16'
+      batch_size: 16
+
+  -
+      test_name: 'resnet18_32bs_16f_cuda_eval'
+      model_name: 'resnet18'
+      model_params: False
+      num_iter: 10
+      use_cuda: True
+      mode: 'eval'
+      type: 'float16'
+      batch_size: 32
+
+  -
+      test_name: 'resnet18_64bs_16f_cuda_eval'
+      model_name: 'resnet18'
+      model_params: False
+      num_iter: 10
+      use_cuda: True
+      mode: 'eval'
+      type: 'float16'
+      batch_size: 64
+
+  -
+      test_name: 'resnet18_16bs_16f_cuda_train'
+      model_name: 'resnet18'
+      model_params: False
+      num_iter: 10
+      use_cuda: True
+      mode: 'train'
+      type: 'float16'
+      batch_size: 16
+
+  -
+      test_name: 'resnet18_32bs_16f_cuda_train'
+      model_name: 'resnet18'
+      model_params: False
+      num_iter: 10
+      use_cuda: True
+      mode: 'train'
+      type: 'float16'
+      batch_size: 32
+
+  -
+      test_name: 'resnet18_64bs_16f_cuda_train'
+      model_name: 'resnet18'
+      model_params: False
+      num_iter: 10
+      use_cuda: True
+      mode: 'train'
+      type: 'float16'
+      batch_size: 64
+
+  # Float 32
+  -
+      test_name: 'resnet18_16bs_32f_cuda_eval'
+      model_name: 'resnet18'
+      model_params: False
+      num_iter: 10
+      use_cuda: True
+      mode: 'eval'
+      type: 'float32'
+      batch_size: 16
+
+  -
+      test_name: 'resnet18_32bs_32f_cuda_eval'
+      model_name: 'resnet18'
+      model_params: False
+      num_iter: 10
+      use_cuda: True
+      mode: 'eval'
+      type: 'float32'
+      batch_size: 32
+
+  -
+      test_name: 'resnet18_64bs_32f_cuda_eval'
+      model_name: 'resnet18'
+      model_params: False
+      num_iter: 10
+      use_cuda: True
+      mode: 'eval'
+      type: 'float32'
+      batch_size: 64
+
+  -
+      test_name: 'resnet18_16bs_32f_no_cuda_eval'
+      model_name: 'resnet18'
+      model_params: False
+      num_iter: 10
+      use_cuda: False
+      mode: 'eval'
+      type: 'float32'
+      batch_size: 16
+  -
+      test_name: 'resnet18_16bs_32f_cuda_train'
+      model_name: 'resnet18'
+      model_params: False
+      num_iter: 10
+      use_cuda: True
+      mode: 'train'
+      type: 'float32'
+      batch_size: 16
+
+  -
+      test_name: 'resnet18_32bs_32f_cuda_train'
+      model_name: 'resnet18'
+      model_params: False
+      num_iter: 10
+      use_cuda: True
+      mode: 'train'
+      type: 'float32'
+      batch_size: 32
+
+  -
+      test_name: 'resnet18_64bs_32f_cuda_train'
+      model_name: 'resnet18'
+      model_params: False
+      num_iter: 10
+      use_cuda: True
+      mode: 'train'
+      type: 'float32'
+      batch_size: 64
+
+  -
+      test_name: 'resnet18_16bs_32f_no_cuda_train'
+      model_name: 'resnet18'
+      model_params: False
+      num_iter: 10
+      use_cuda: False
+      mode: 'train'
+      type: 'float32'
+      batch_size: 16
+
+  # Float 64
+  -
+      test_name: 'resnet18_16bs_64f_cuda_eval'
+      model_name: 'resnet18'
+      model_params: False
+      num_iter: 10
+      use_cuda: True
+      mode: 'eval'
+      type: 'float64'
+      batch_size: 16
+
+  -
+      test_name: 'resnet18_32bs_64f_cuda_eval'
+      model_name: 'resnet18'
+      model_params: False
+      num_iter: 10
+      use_cuda: True
+      mode: 'eval'
+      type: 'float64'
+      batch_size: 32
+
+  -
+      test_name: 'resnet18_64bs_64f_cuda_eval'
+      model_name: 'resnet18'
+      model_params: False
+      num_iter: 10
+      use_cuda: True
+      mode: 'eval'
+      type: 'float64'
+      batch_size: 64
+
+  -
+      test_name: 'resnet18_16bs_64f_no_cuda_eval'
+      model_name: 'resnet18'
+      model_params: False
+      num_iter: 10
+      use_cuda: False
+      mode: 'eval'
+      type: 'float64'
+      batch_size: 16
+  -
+      test_name: 'resnet18_16bs_64f_cuda_train'
+      model_name: 'resnet18'
+      model_params: False
+      num_iter: 10
+      use_cuda: True
+      mode: 'train'
+      type: 'float64'
+      batch_size: 16
+
+  -
+      test_name: 'resnet18_32bs_64f_cuda_train'
+      model_name: 'resnet18'
+      model_params: False
+      num_iter: 10
+      use_cuda: True
+      mode: 'train'
+      type: 'float64'
+      batch_size: 32
+
+  -
+      test_name: 'resnet18_64bs_64f_cuda_train'
+      model_name: 'resnet18'
+      model_params: False
+      num_iter: 10
+      use_cuda: True
+      mode: 'train'
+      type: 'float64'
+      batch_size: 64
+
+  -
+      test_name: 'resnet18_16bs_64f_no_cuda_train'
+      model_name: 'resnet18'
+      model_params: False
+      num_iter: 10
+      use_cuda: False
+      mode: 'train'
+      type: 'float64'
+      batch_size: 16
+
+  -
+      test_name: 'test_with_error'
+      model_name: 'resnet1811'
+
+
+plots:
+  - fps_batch_size:
+      axis: ['fps', 'batch_size']
