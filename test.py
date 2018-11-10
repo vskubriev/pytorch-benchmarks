@@ -79,7 +79,7 @@ def test_runner(params):
         performance, fps = test_case(
             model_name=params.model_name, model_params=params.model_params,
             num_iter=params.num_iter, use_cuda=params.use_cuda, batch_size=params.batch_size,
-            type=params.type, mode=params.mode)
+            ftype=params.type, mode=params.mode)
         print(colored('+  {:.3f} second per iteration'.format(performance), 'blue'))
         print(colored('+  {:.3f} fps'.format(fps), 'blue'))
     except:
@@ -101,7 +101,7 @@ def main():
     )
 
     parser.add_argument('--config', type=str,
-                        default='tests.yml',
+                        default='/root/tests.yml',
                         help='YAML config file')
     params = parser.parse_args()
 
