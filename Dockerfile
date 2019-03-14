@@ -1,4 +1,4 @@
-FROM nvidia/cuda:9.0-base-ubuntu16.04
+FROM nvidia/cuda:10.0-base-ubuntu18.04
 LABEL maintainer="nerox8664@gmail.com"
 
 RUN apt update
@@ -13,6 +13,8 @@ RUN pip install pyyaml
 
 ADD test.py /root/
 ADD tests.yml /root/
+ADD loop.sh /root/
+RUN chmod ugo+x /root/loop.sh
 ENTRYPOINT python /root/test.py
 
 

@@ -11,8 +11,12 @@ A set of PyTorch benchmarks.
 ## Usage
 
 ```
-docker run --rm -ti nerox8664/pytorch-benchmarks
+nvidia-docker run --rm -ti nerox8664/pytorch-benchmarks
 ```
+
+If you want run in a loop:
+
+nvidia-docker run --rm -ti --entrypoint "/root/loop.sh" nerox8664/pytorch-benchmarks
 
 ![pytorch_benchmarks.gif](./pytorch_benchmarks.gif)
 
